@@ -16,12 +16,22 @@ fun main() {
 
     println(numbers[0])
 
+    for (i in numbers.indices) {
+        println("$i ${numbers[i]}")
+    }
+
     for (number in numbers) {
         println(number)
     }
 
     for ((idx, value) in numbers.withIndex()) {
         println("$idx - $value")
+    }
+
+    val sets = setOf("100", "139")
+
+    for (set in sets) {
+        println("set in value is $set")
     }
 
     val oldMap = mutableMapOf<Int, String>()

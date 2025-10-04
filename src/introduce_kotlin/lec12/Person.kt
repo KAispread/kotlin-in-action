@@ -2,7 +2,7 @@ package introduce_kotlin.lec12
 
 fun main() {
     val newBaby = Person.newBaby("new1")
-    Person.Factory.log()
+    Person.log("value")
 
     println(Singleton.a)
     Singleton.a += 1;
@@ -22,8 +22,8 @@ class Person private constructor(
             return Person(name, MIN_AGE)
         }
 
-        override fun log() {
-            println("log")
+        override fun log(value: String) {
+            print(value)
         }
     }
 }
