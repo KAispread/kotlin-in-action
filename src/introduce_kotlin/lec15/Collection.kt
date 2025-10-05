@@ -8,6 +8,10 @@ fun main() {
     // 가변 List 생성
     val mutableNumbers = mutableListOf(100, 200)
 
+    for (i in 3 downTo 1 step 2) {
+
+    }
+
     // 빈 List 생성
     val intNumbers = emptyList<Int>()
 
